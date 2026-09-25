@@ -1,0 +1,220 @@
+[
+  {
+    "label": "Exame normal: 0 ponto",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "score": 0,
+      "level": "low"
+    },
+    "originalInput": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Paralisia facial menor + disartria leve: 2 pontos (leve)",
+    "input": {
+      "n4": "1",
+      "n10": "1",
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "score": 2,
+      "level": "mid",
+      "verdict": "leve"
+    },
+    "originalInput": {
+      "n4": "1",
+      "n10": "1"
+    },
+    "expandedZeroOptions": [
+      "n1a",
+      "n1b",
+      "n1c",
+      "n2",
+      "n3",
+      "n5a",
+      "n5b",
+      "n6a",
+      "n6b",
+      "n7",
+      "n8",
+      "n9",
+      "n11"
+    ]
+  },
+  {
+    "label": "Sonolento, hemianopsia completa, face parcial, braço 3, perna 2, afasia e disartria leves: 12 (moderado)",
+    "input": {
+      "n1a": "1",
+      "n3": "2",
+      "n4": "2",
+      "n5a": "3",
+      "n6a": "2",
+      "n9": "1",
+      "n10": "1",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n5b": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "score": 12,
+      "level": "mid",
+      "verdict": "moderado (5 a 15"
+    },
+    "originalInput": {
+      "n1a": "1",
+      "n3": "2",
+      "n4": "2",
+      "n5a": "3",
+      "n6a": "2",
+      "n9": "1",
+      "n10": "1"
+    },
+    "expandedZeroOptions": [
+      "n1b",
+      "n1c",
+      "n2",
+      "n5b",
+      "n6b",
+      "n7",
+      "n8",
+      "n11"
+    ]
+  },
+  {
+    "label": "Limite: 16 pontos (moderado a grave)",
+    "input": {
+      "n2": "2",
+      "n3": "2",
+      "n4": "2",
+      "n5b": "4",
+      "n6b": "4",
+      "n9": "2",
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n5a": "0",
+      "n6a": "0",
+      "n7": "0",
+      "n8": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "score": 16,
+      "level": "high",
+      "verdict": "moderado a grave"
+    },
+    "originalInput": {
+      "n2": "2",
+      "n3": "2",
+      "n4": "2",
+      "n5b": "4",
+      "n6b": "4",
+      "n9": "2"
+    },
+    "expandedZeroOptions": [
+      "n1a",
+      "n1b",
+      "n1c",
+      "n5a",
+      "n6a",
+      "n7",
+      "n8",
+      "n10",
+      "n11"
+    ]
+  },
+  {
+    "label": "Síndrome hemisférica esquerda completa: 28 (grave)",
+    "input": {
+      "n1a": "2",
+      "n1b": "2",
+      "n1c": "2",
+      "n2": "2",
+      "n3": "2",
+      "n4": "3",
+      "n5b": "4",
+      "n6b": "4",
+      "n8": "2",
+      "n9": "3",
+      "n11": "2",
+      "n5a": "0",
+      "n6a": "0",
+      "n7": "0",
+      "n10": "0"
+    },
+    "expected": {
+      "score": 28,
+      "level": "high",
+      "verdict": "grave (21"
+    },
+    "originalInput": {
+      "n1a": "2",
+      "n1b": "2",
+      "n1c": "2",
+      "n2": "2",
+      "n3": "2",
+      "n4": "3",
+      "n5b": "4",
+      "n6b": "4",
+      "n8": "2",
+      "n9": "3",
+      "n11": "2"
+    },
+    "expandedZeroOptions": [
+      "n5a",
+      "n6a",
+      "n7",
+      "n10"
+    ]
+  }
+]
