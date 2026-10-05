@@ -1,0 +1,498 @@
+{
+  "id": "nihss",
+  "at": "2026-10-05T17:29:57.652Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/nihss/calculator.js",
+    "bytes": 9611,
+    "sha256": "ab5c3638bedabb2925df3044dc0c434a9406d4ab66eec77628ad2f4a41bccbde"
+  },
+  "cases": [
+    {
+      "name": "Exame normal: 0 ponto",
+      "input": {
+        "n1a": "0",
+        "n1b": "0",
+        "n1c": "0",
+        "n2": "0",
+        "n3": "0",
+        "n4": "0",
+        "n5a": "0",
+        "n5b": "0",
+        "n6a": "0",
+        "n6b": "0",
+        "n7": "0",
+        "n8": "0",
+        "n9": "0",
+        "n10": "0",
+        "n11": "0"
+      },
+      "obtained": {
+        "id": "nihss",
+        "main": [
+          "0",
+          "de 42"
+        ],
+        "label": "NIHSS",
+        "raw": {
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 0,
+          "obtained": 0,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "0",
+          "obtained": "0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 42",
+          "obtained": "de 42",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Paralisia facial menor + disartria leve: 2 pontos (leve)",
+      "input": {
+        "n4": "1",
+        "n10": "1",
+        "n1a": "0",
+        "n1b": "0",
+        "n1c": "0",
+        "n2": "0",
+        "n3": "0",
+        "n5a": "0",
+        "n5b": "0",
+        "n6a": "0",
+        "n6b": "0",
+        "n7": "0",
+        "n8": "0",
+        "n9": "0",
+        "n11": "0"
+      },
+      "obtained": {
+        "id": "nihss",
+        "main": [
+          "2",
+          "de 42"
+        ],
+        "label": "NIHSS",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 2,
+          "obtained": 2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "2",
+          "obtained": "2",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 42",
+          "obtained": "de 42",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Sonolento, hemianopsia completa, face parcial, braço 3, perna 2, afasia e disartria leves: 12 (moderado)",
+      "input": {
+        "n1a": "1",
+        "n3": "2",
+        "n4": "2",
+        "n5a": "3",
+        "n6a": "2",
+        "n9": "1",
+        "n10": "1",
+        "n1b": "0",
+        "n1c": "0",
+        "n2": "0",
+        "n5b": "0",
+        "n6b": "0",
+        "n7": "0",
+        "n8": "0",
+        "n11": "0"
+      },
+      "obtained": {
+        "id": "nihss",
+        "main": [
+          "12",
+          "de 42"
+        ],
+        "label": "NIHSS",
+        "raw": {
+          "score": 12
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 12,
+          "obtained": 12,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 12,
+          "obtained": 12,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "12",
+          "obtained": "12",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 42",
+          "obtained": "de 42",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Limite: 16 pontos (moderado a grave)",
+      "input": {
+        "n2": "2",
+        "n3": "2",
+        "n4": "2",
+        "n5b": "4",
+        "n6b": "4",
+        "n9": "2",
+        "n1a": "0",
+        "n1b": "0",
+        "n1c": "0",
+        "n5a": "0",
+        "n6a": "0",
+        "n7": "0",
+        "n8": "0",
+        "n10": "0",
+        "n11": "0"
+      },
+      "obtained": {
+        "id": "nihss",
+        "main": [
+          "16",
+          "de 42"
+        ],
+        "label": "NIHSS",
+        "raw": {
+          "score": 16
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 16,
+          "obtained": 16,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 16,
+          "obtained": 16,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "16",
+          "obtained": "16",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 42",
+          "obtained": "de 42",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Síndrome hemisférica esquerda completa: 28 (grave)",
+      "input": {
+        "n1a": "2",
+        "n1b": "2",
+        "n1c": "2",
+        "n2": "2",
+        "n3": "2",
+        "n4": "3",
+        "n5b": "4",
+        "n6b": "4",
+        "n8": "2",
+        "n9": "3",
+        "n11": "2",
+        "n5a": "0",
+        "n6a": "0",
+        "n7": "0",
+        "n10": "0"
+      },
+      "obtained": {
+        "id": "nihss",
+        "main": [
+          "28",
+          "de 42"
+        ],
+        "label": "NIHSS",
+        "raw": {
+          "score": 28
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.score",
+          "expected": 28,
+          "obtained": 28,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.score",
+          "expected": 28,
+          "obtained": 28,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "28",
+          "obtained": "28",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "de 42",
+          "obtained": "de 42",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 49,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

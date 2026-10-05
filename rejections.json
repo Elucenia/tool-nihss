@@ -1,0 +1,1148 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field n1a",
+    "input": {
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n1a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field n1a",
+    "input": {
+      "n1a": "",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n1a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option n1a",
+    "input": {
+      "n1a": "__ELUCENIA_INVALID_OPTION__",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "n1a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field n1b",
+    "input": {
+      "n1a": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n1b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field n1b",
+    "input": {
+      "n1a": "0",
+      "n1b": "",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n1b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option n1b",
+    "input": {
+      "n1a": "0",
+      "n1b": "__ELUCENIA_INVALID_OPTION__",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "n1b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field n1c",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n1c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field n1c",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n1c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option n1c",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "__ELUCENIA_INVALID_OPTION__",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "n1c"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field n2",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field n2",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option n2",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "__ELUCENIA_INVALID_OPTION__",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "n2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field n3",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n3"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field n3",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n3"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option n3",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "__ELUCENIA_INVALID_OPTION__",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "n3"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field n4",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n4"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field n4",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n4"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option n4",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "__ELUCENIA_INVALID_OPTION__",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "n4"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field n5a",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n5a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field n5a",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n5a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option n5a",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "__ELUCENIA_INVALID_OPTION__",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "n5a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field n5b",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n5b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field n5b",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n5b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option n5b",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "__ELUCENIA_INVALID_OPTION__",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "n5b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field n6a",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n6a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field n6a",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n6a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option n6a",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "__ELUCENIA_INVALID_OPTION__",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "n6a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field n6b",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n6b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field n6b",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n6b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option n6b",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "__ELUCENIA_INVALID_OPTION__",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "n6b"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field n7",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n7"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field n7",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n7"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option n7",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "__ELUCENIA_INVALID_OPTION__",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "n7"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field n8",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n8"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field n8",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n8"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option n8",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "__ELUCENIA_INVALID_OPTION__",
+      "n9": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "n8"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field n9",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n9"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field n9",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n9"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option n9",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "__ELUCENIA_INVALID_OPTION__",
+      "n10": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "n9"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field n10",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n10"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field n10",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n10"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option n10",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "__ELUCENIA_INVALID_OPTION__",
+      "n11": "0"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "n10"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field n11",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n11"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field n11",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "n11"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option n11",
+    "input": {
+      "n1a": "0",
+      "n1b": "0",
+      "n1c": "0",
+      "n2": "0",
+      "n3": "0",
+      "n4": "0",
+      "n5a": "0",
+      "n5b": "0",
+      "n6a": "0",
+      "n6b": "0",
+      "n7": "0",
+      "n8": "0",
+      "n9": "0",
+      "n10": "0",
+      "n11": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "n11"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
