@@ -1,0 +1,877 @@
+{
+  "id": "nihss",
+  "implementationVersion": "nihss@native-2026-10-05+667340c6ec0b",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Exame normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sem déficit mensurável pela NIHSS",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Uma NIHSS 0 não exclui AVC: déficits de circulação posterior (marcha, vertigem, disfagia) pontuam pouco.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Paralisia facial menor + disartria leve: 2 pontos (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "AVC leve (1 a 4 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Avalie se o déficit é incapacitante: um NIHSS baixo com afasia ou hemianopsia pode justificar reperfusão.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sonolento, hemianopsia completa, face parcial, braço 3, perna 2, afasia e disartria leves: 12 (moderado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "AVC moderado (5 a 15 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Investigue oclusão de grande vaso (angiotomografia) se estiver na janela de trombectomia.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 16 pontos (moderado a grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "AVC moderado a grave (16 a 20 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Alta probabilidade de oclusão de grande vaso; maior risco de transformação hemorrágica.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Síndrome hemisférica esquerda completa: 28 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "AVC grave (21 a 42 pontos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Déficit extenso: prognóstico reservado sem reperfusão.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Exame normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "No measurable deficit on the NIHSS",
+            "locale": "en",
+            "template": "documented-authored-9d49f43241848d682d03"
+          },
+          "note": {
+            "text": "A NIHSS of 0 does not exclude stroke: posterior circulation deficits (gait, vertigo, dysphagia) score low.",
+            "locale": "en",
+            "template": "documented-authored-3a6671fc083ae960f0db"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Paralisia facial menor + disartria leve: 2 pontos (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mild stroke (1 to 4 points)",
+            "locale": "en",
+            "template": "documented-authored-2c2252a340953060ac2e"
+          },
+          "note": {
+            "text": "Assess whether the deficit is disabling: a low NIHSS with aphasia or hemianopsia may justify reperfusion.",
+            "locale": "en",
+            "template": "documented-authored-e8561afd6f4611ef2267"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sonolento, hemianopsia completa, face parcial, braço 3, perna 2, afasia e disartria leves: 12 (moderado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderate stroke (5 to 15 points)",
+            "locale": "en",
+            "template": "documented-authored-dcd065a6400d01b4ff81"
+          },
+          "note": {
+            "text": "Investigate large vessel occlusion (angiotomography) if within the thrombectomy window.",
+            "locale": "en",
+            "template": "documented-authored-3408f18e2b54bfbf8873"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 16 pontos (moderado a grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderate to severe stroke (16 to 20 points)",
+            "locale": "en",
+            "template": "documented-authored-1d9540ad902c1550b4c1"
+          },
+          "note": {
+            "text": "High probability of large vessel occlusion; higher risk of hemorrhagic transformation.",
+            "locale": "en",
+            "template": "documented-authored-c405e2ec3a156badd8ac"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Síndrome hemisférica esquerda completa: 28 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Severe stroke (21 to 42 points)",
+            "locale": "en",
+            "template": "documented-authored-56c6c1636ac76551c927"
+          },
+          "note": {
+            "text": "Extensive deficit: guarded prognosis without reperfusion.",
+            "locale": "en",
+            "template": "documented-authored-a3390e4dd1779117c935"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Exame normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sin déficit medible en la NIHSS",
+            "locale": "es",
+            "template": "documented-authored-9d49f43241848d682d03"
+          },
+          "note": {
+            "text": "Una NIHSS de 0 no excluye un ictus: los déficits de circulación posterior (marcha, vértigo, disfagia) puntúan poco.",
+            "locale": "es",
+            "template": "documented-authored-3a6671fc083ae960f0db"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Paralisia facial menor + disartria leve: 2 pontos (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ictus leve (1 a 4 puntos)",
+            "locale": "es",
+            "template": "documented-authored-2c2252a340953060ac2e"
+          },
+          "note": {
+            "text": "Evalúe si el déficit es incapacitante: una NIHSS baja con afasia o hemianopsia puede justificar reperfusión.",
+            "locale": "es",
+            "template": "documented-authored-e8561afd6f4611ef2267"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sonolento, hemianopsia completa, face parcial, braço 3, perna 2, afasia e disartria leves: 12 (moderado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ictus moderado (5 a 15 puntos)",
+            "locale": "es",
+            "template": "documented-authored-dcd065a6400d01b4ff81"
+          },
+          "note": {
+            "text": "Investigue oclusión de gran vaso (angiotomografía) si está dentro de la ventana de trombectomía.",
+            "locale": "es",
+            "template": "documented-authored-3408f18e2b54bfbf8873"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 16 pontos (moderado a grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ictus moderado a grave (16 a 20 puntos)",
+            "locale": "es",
+            "template": "documented-authored-1d9540ad902c1550b4c1"
+          },
+          "note": {
+            "text": "Alta probabilidad de oclusión de gran vaso; mayor riesgo de transformación hemorrágica.",
+            "locale": "es",
+            "template": "documented-authored-c405e2ec3a156badd8ac"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Síndrome hemisférica esquerda completa: 28 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ictus grave (21 a 42 puntos)",
+            "locale": "es",
+            "template": "documented-authored-56c6c1636ac76551c927"
+          },
+          "note": {
+            "text": "Déficit extenso: pronóstico reservado sin reperfusión.",
+            "locale": "es",
+            "template": "documented-authored-a3390e4dd1779117c935"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Exame normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Aucun déficit mesurable à la NIHSS",
+            "locale": "fr",
+            "template": "documented-authored-9d49f43241848d682d03"
+          },
+          "note": {
+            "text": "Un score NIHSS de 0 n’exclut pas un AVC : les déficits de la circulation postérieure (marche, vertige, dysphagie) obtiennent peu de points.",
+            "locale": "fr",
+            "template": "documented-authored-3a6671fc083ae960f0db"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Paralisia facial menor + disartria leve: 2 pontos (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "AVC léger (1 à 4 points)",
+            "locale": "fr",
+            "template": "documented-authored-2c2252a340953060ac2e"
+          },
+          "note": {
+            "text": "Évaluez si le déficit est invalidant : un NIHSS faible avec aphasie ou hémianopsie peut justifier une reperfusion.",
+            "locale": "fr",
+            "template": "documented-authored-e8561afd6f4611ef2267"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sonolento, hemianopsia completa, face parcial, braço 3, perna 2, afasia e disartria leves: 12 (moderado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "AVC modéré (5 à 15 points)",
+            "locale": "fr",
+            "template": "documented-authored-dcd065a6400d01b4ff81"
+          },
+          "note": {
+            "text": "Rechercher une occlusion de gros vaisseau (angiotomographie) si vous êtes dans la fenêtre de thrombectomie.",
+            "locale": "fr",
+            "template": "documented-authored-3408f18e2b54bfbf8873"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 16 pontos (moderado a grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "AVC modéré à sévère (16 à 20 points)",
+            "locale": "fr",
+            "template": "documented-authored-1d9540ad902c1550b4c1"
+          },
+          "note": {
+            "text": "Forte probabilité d’occlusion de gros vaisseau ; risque accru de transformation hémorragique.",
+            "locale": "fr",
+            "template": "documented-authored-c405e2ec3a156badd8ac"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Síndrome hemisférica esquerda completa: 28 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "AVC grave (21 à 42 points)",
+            "locale": "fr",
+            "template": "documented-authored-56c6c1636ac76551c927"
+          },
+          "note": {
+            "text": "Déficit étendu : pronostic réservé sans reperfusion.",
+            "locale": "fr",
+            "template": "documented-authored-a3390e4dd1779117c935"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Exame normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Kein messbares Defizit nach der NIHSS",
+            "locale": "de",
+            "template": "documented-authored-9d49f43241848d682d03"
+          },
+          "note": {
+            "text": "Eine NIHSS von 0 schließt einen Schlaganfall nicht aus: Defizite der hinteren Zirkulation (Gangstörung, Vertigo, Dysphagie) werden niedrig bewertet.",
+            "locale": "de",
+            "template": "documented-authored-3a6671fc083ae960f0db"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Paralisia facial menor + disartria leve: 2 pontos (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Leichter Schlaganfall (1 bis 4 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-2c2252a340953060ac2e"
+          },
+          "note": {
+            "text": "Beurteilen Sie, ob das Defizit behindernd ist: Ein niedriger NIHSS-Wert mit Aphasie oder Hemianopsie kann eine Reperfusion rechtfertigen.",
+            "locale": "de",
+            "template": "documented-authored-e8561afd6f4611ef2267"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sonolento, hemianopsia completa, face parcial, braço 3, perna 2, afasia e disartria leves: 12 (moderado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mäßiger Schlaganfall (5 bis 15 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-dcd065a6400d01b4ff81"
+          },
+          "note": {
+            "text": "Eine große Gefäßokklusion (Angiotomographie) untersuchen, wenn Sie sich im Thrombektomie-Zeitfenster befinden.",
+            "locale": "de",
+            "template": "documented-authored-3408f18e2b54bfbf8873"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 16 pontos (moderado a grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mäßiger bis schwerer Schlaganfall (16 bis 20 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-1d9540ad902c1550b4c1"
+          },
+          "note": {
+            "text": "Hohe Wahrscheinlichkeit eines großen Gefäßverschlusses; höheres Risiko einer hämorrhagischen Transformation.",
+            "locale": "de",
+            "template": "documented-authored-c405e2ec3a156badd8ac"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Síndrome hemisférica esquerda completa: 28 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Schwerer Schlaganfall (21 bis 42 Punkte)",
+            "locale": "de",
+            "template": "documented-authored-56c6c1636ac76551c927"
+          },
+          "note": {
+            "text": "Ausgedehntes Defizit: zurückhaltende Prognose ohne Reperfusion.",
+            "locale": "de",
+            "template": "documented-authored-a3390e4dd1779117c935"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Exame normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Nessun deficit misurabile alla NIHSS",
+            "locale": "it",
+            "template": "documented-authored-9d49f43241848d682d03"
+          },
+          "note": {
+            "text": "Una NIHSS di 0 non esclude un ictus: i deficit della circolazione posteriore (andatura, vertigine, disfagia) ottengono pochi punti.",
+            "locale": "it",
+            "template": "documented-authored-3a6671fc083ae960f0db"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Paralisia facial menor + disartria leve: 2 pontos (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ictus lieve (1 a 4 punti)",
+            "locale": "it",
+            "template": "documented-authored-2c2252a340953060ac2e"
+          },
+          "note": {
+            "text": "Valutare se il deficit è disabilitante: una NIHSS bassa con afasia o emianopsia può giustificare la riperfusione.",
+            "locale": "it",
+            "template": "documented-authored-e8561afd6f4611ef2267"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sonolento, hemianopsia completa, face parcial, braço 3, perna 2, afasia e disartria leves: 12 (moderado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ictus moderato (5 a 15 punti)",
+            "locale": "it",
+            "template": "documented-authored-dcd065a6400d01b4ff81"
+          },
+          "note": {
+            "text": "Indagare un’occlusione di grosso vaso (angiotomografia) se si è nella finestra per la trombectomia.",
+            "locale": "it",
+            "template": "documented-authored-3408f18e2b54bfbf8873"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 16 pontos (moderado a grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ictus moderato-grave (16 a 20 punti)",
+            "locale": "it",
+            "template": "documented-authored-1d9540ad902c1550b4c1"
+          },
+          "note": {
+            "text": "Alta probabilità di occlusione di grosso vaso; maggiore rischio di trasformazione emorragica.",
+            "locale": "it",
+            "template": "documented-authored-c405e2ec3a156badd8ac"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Síndrome hemisférica esquerda completa: 28 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ictus grave (21 a 42 punti)",
+            "locale": "it",
+            "template": "documented-authored-56c6c1636ac76551c927"
+          },
+          "note": {
+            "text": "Deficit esteso: prognosi riservata senza riperfusione.",
+            "locale": "it",
+            "template": "documented-authored-a3390e4dd1779117c935"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Exame normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "لا يوجد عجز قابل للقياس على NIHSS",
+            "locale": "ar",
+            "template": "documented-authored-9d49f43241848d682d03"
+          },
+          "note": {
+            "text": "لا تستبعد NIHSS 0 السكتة الدماغية: فإن عجز الدوران الخلفي (المشي، الدوار، عسر البلع) يحصل على درجات قليلة.",
+            "locale": "ar",
+            "template": "documented-authored-3a6671fc083ae960f0db"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Paralisia facial menor + disartria leve: 2 pontos (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "سكتة دماغية خفيفة (1 إلى 4 نقاط)",
+            "locale": "ar",
+            "template": "documented-authored-2c2252a340953060ac2e"
+          },
+          "note": {
+            "text": "قيّم ما إذا كان العجز مُعطِّلًا: قد تبرر قيمة NIHSS منخفضة مع حبسة أو نصف عمى إعادة الإرواء.",
+            "locale": "ar",
+            "template": "documented-authored-e8561afd6f4611ef2267"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sonolento, hemianopsia completa, face parcial, braço 3, perna 2, afasia e disartria leves: 12 (moderado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "سكتة دماغية متوسطة (5 إلى 15 نقطة)",
+            "locale": "ar",
+            "template": "documented-authored-dcd065a6400d01b4ff81"
+          },
+          "note": {
+            "text": "تحرَّ انسداد الوعاء الكبير (التصوير الوعائي المقطعي) إذا كان ذلك ضمن نافذة استئصال الخثرة.",
+            "locale": "ar",
+            "template": "documented-authored-3408f18e2b54bfbf8873"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 16 pontos (moderado a grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "سكتة دماغية متوسطة إلى شديدة (16 إلى 20 نقطة)",
+            "locale": "ar",
+            "template": "documented-authored-1d9540ad902c1550b4c1"
+          },
+          "note": {
+            "text": "احتمال مرتفع لانسداد الوعاء الكبير؛ خطر أعلى للتحول النزفي.",
+            "locale": "ar",
+            "template": "documented-authored-c405e2ec3a156badd8ac"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Síndrome hemisférica esquerda completa: 28 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "سكتة دماغية شديدة (21 إلى 42 نقطة)",
+            "locale": "ar",
+            "template": "documented-authored-56c6c1636ac76551c927"
+          },
+          "note": {
+            "text": "عجز واسع النطاق: إنذار متحفظ دون إعادة الإرواء.",
+            "locale": "ar",
+            "template": "documented-authored-a3390e4dd1779117c935"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Exame normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "NIHSS无可测量缺损",
+            "locale": "zh",
+            "template": "documented-authored-9d49f43241848d682d03"
+          },
+          "note": {
+            "text": "NIHSS为0并不能排除卒中：后循环缺损（步态、眩晕、吞咽困难）得分较低。",
+            "locale": "zh",
+            "template": "documented-authored-3a6671fc083ae960f0db"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Paralisia facial menor + disartria leve: 2 pontos (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "轻度卒中（1至4分）",
+            "locale": "zh",
+            "template": "documented-authored-2c2252a340953060ac2e"
+          },
+          "note": {
+            "text": "评估缺损是否致残：伴失语或偏盲的低NIHSS可能足以支持再灌注。",
+            "locale": "zh",
+            "template": "documented-authored-e8561afd6f4611ef2267"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sonolento, hemianopsia completa, face parcial, braço 3, perna 2, afasia e disartria leves: 12 (moderado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中度卒中（5至15分）",
+            "locale": "zh",
+            "template": "documented-authored-dcd065a6400d01b4ff81"
+          },
+          "note": {
+            "text": "如果处于取栓时间窗内，应检查大血管闭塞（血管CT）。",
+            "locale": "zh",
+            "template": "documented-authored-3408f18e2b54bfbf8873"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 16 pontos (moderado a grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中度至重度卒中（16至20分）",
+            "locale": "zh",
+            "template": "documented-authored-1d9540ad902c1550b4c1"
+          },
+          "note": {
+            "text": "大血管闭塞可能性高；出血性转化风险更高。",
+            "locale": "zh",
+            "template": "documented-authored-c405e2ec3a156badd8ac"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Síndrome hemisférica esquerda completa: 28 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "重度卒中（21至42分）",
+            "locale": "zh",
+            "template": "documented-authored-56c6c1636ac76551c927"
+          },
+          "note": {
+            "text": "缺损范围广泛：在未再灌注情况下预后谨慎。",
+            "locale": "zh",
+            "template": "documented-authored-a3390e4dd1779117c935"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Exame normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "NIHSSで測定可能な障害なし",
+            "locale": "ja",
+            "template": "documented-authored-9d49f43241848d682d03"
+          },
+          "note": {
+            "text": "NIHSSが0でも脳卒中は除外できない：後方循環の障害（歩行、めまい、嚥下障害）は得点が低い。",
+            "locale": "ja",
+            "template": "documented-authored-3a6671fc083ae960f0db"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Paralisia facial menor + disartria leve: 2 pontos (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "軽度脳卒中（1～4点）",
+            "locale": "ja",
+            "template": "documented-authored-2c2252a340953060ac2e"
+          },
+          "note": {
+            "text": "障害が致命的かどうかを評価すること：失語症や半盲を伴う低いNIHSSでも再灌流の適応となり得る。",
+            "locale": "ja",
+            "template": "documented-authored-e8561afd6f4611ef2267"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sonolento, hemianopsia completa, face parcial, braço 3, perna 2, afasia e disartria leves: 12 (moderado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等度脳卒中（5～15点）",
+            "locale": "ja",
+            "template": "documented-authored-dcd065a6400d01b4ff81"
+          },
+          "note": {
+            "text": "血栓回収療法の時間枠内であれば、大血管閉塞（CT血管撮影）を検討する。",
+            "locale": "ja",
+            "template": "documented-authored-3408f18e2b54bfbf8873"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 16 pontos (moderado a grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等度から重度の脳卒中（16～20点）",
+            "locale": "ja",
+            "template": "documented-authored-1d9540ad902c1550b4c1"
+          },
+          "note": {
+            "text": "大血管閉塞の可能性が高い；出血性転化のリスクが高い。",
+            "locale": "ja",
+            "template": "documented-authored-c405e2ec3a156badd8ac"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Síndrome hemisférica esquerda completa: 28 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "重度脳卒中（21～42点）",
+            "locale": "ja",
+            "template": "documented-authored-56c6c1636ac76551c927"
+          },
+          "note": {
+            "text": "広範な障害：再灌流なしでは予後不良。",
+            "locale": "ja",
+            "template": "documented-authored-a3390e4dd1779117c935"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Exame normal: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "NIHSS पर कोई मापनीय घाटा नहीं",
+            "locale": "hi",
+            "template": "documented-authored-9d49f43241848d682d03"
+          },
+          "note": {
+            "text": "NIHSS 0 होने पर भी स्ट्रोक को बाहर नहीं किया जा सकता: पश्च परिसंचरण की कमी (चाल, चक्कर, डिस्फेजिया) पर कम अंक मिलते हैं।",
+            "locale": "hi",
+            "template": "documented-authored-3a6671fc083ae960f0db"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Paralisia facial menor + disartria leve: 2 pontos (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "हल्का स्ट्रोक (1 से 4 अंक)",
+            "locale": "hi",
+            "template": "documented-authored-2c2252a340953060ac2e"
+          },
+          "note": {
+            "text": "यह आकलन करें कि क्या घाटा अक्षमकारी है: अफ़ेज़िया या हेमियनोप्सिया के साथ कम NIHSS पुनर्प्रवाह को उचित ठहरा सकता है।",
+            "locale": "hi",
+            "template": "documented-authored-e8561afd6f4611ef2267"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Sonolento, hemianopsia completa, face parcial, braço 3, perna 2, afasia e disartria leves: 12 (moderado)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम स्ट्रोक (5 से 15 अंक)",
+            "locale": "hi",
+            "template": "documented-authored-dcd065a6400d01b4ff81"
+          },
+          "note": {
+            "text": "यदि थ्रोम्बेक्टॉमी विंडो के भीतर हों, तो बड़े रक्तवाहिका अवरोध (एंजियोटोमोग्राफी) की जांच करें।",
+            "locale": "hi",
+            "template": "documented-authored-3408f18e2b54bfbf8873"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Limite: 16 pontos (moderado a grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम से गंभीर स्ट्रोक (16 से 20 अंक)",
+            "locale": "hi",
+            "template": "documented-authored-1d9540ad902c1550b4c1"
+          },
+          "note": {
+            "text": "बड़े रक्तवाहिका अवरोध की उच्च संभावना; रक्तस्रावी रूपांतरण का अधिक जोखिम।",
+            "locale": "hi",
+            "template": "documented-authored-c405e2ec3a156badd8ac"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Síndrome hemisférica esquerda completa: 28 (grave)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "गंभीर स्ट्रोक (21 से 42 अंक)",
+            "locale": "hi",
+            "template": "documented-authored-56c6c1636ac76551c927"
+          },
+          "note": {
+            "text": "व्यापक घाटा: पुनर्प्रवाह के बिना संरक्षित पूर्वानुमान।",
+            "locale": "hi",
+            "template": "documented-authored-a3390e4dd1779117c935"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

@@ -205,3 +205,42 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Sin déficit medible en la NIHSS
+
+Una NIHSS de 0 no excluye un ictus: los déficits de circulación posterior (marcha, vértigo, disfagia) puntúan poco.
+
+
+### 2
+
+Ictus leve (1 a 4 puntos)
+
+Evalúe si el déficit es incapacitante: una NIHSS baja con afasia o hemianopsia puede justificar reperfusión.
+
+
+### 3
+
+Ictus moderado (5 a 15 puntos)
+
+Investigue oclusión de gran vaso (angiotomografía) si está dentro de la ventana de trombectomía.
+
+
+### 4
+
+Ictus moderado a grave (16 a 20 puntos)
+
+Alta probabilidad de oclusión de gran vaso; mayor riesgo de transformación hemorrágica.
+
+
+### 5
+
+Ictus grave (21 a 42 puntos)
+
+Déficit extenso: pronóstico reservado sin reperfusión.
+

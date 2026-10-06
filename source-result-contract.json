@@ -1,0 +1,335 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "nihss",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "611ecee1784ca2fbdc6f168c51007039b562d9a3",
+    "oldEngineSha256": "ab5c3638bedabb2925df3044dc0c434a9406d4ab66eec77628ad2f4a41bccbde",
+    "currentEngineSha256": "667340c6ec0b68bf834517afee513febac18862ba9de091fd5fa6758755a294e"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Exame normal: 0 ponto",
+      "input": {
+        "n1a": "0",
+        "n1b": "0",
+        "n1c": "0",
+        "n2": "0",
+        "n3": "0",
+        "n4": "0",
+        "n5a": "0",
+        "n5b": "0",
+        "n6a": "0",
+        "n6b": "0",
+        "n7": "0",
+        "n8": "0",
+        "n9": "0",
+        "n10": "0",
+        "n11": "0"
+      },
+      "publicOutput": {
+        "id": "nihss",
+        "main": [
+          "0",
+          "de 42"
+        ],
+        "label": "NIHSS",
+        "raw": {
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 0,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "de 42"
+        ],
+        "label": "NIHSS",
+        "level": "low",
+        "verdict": "Sem déficit mensurável pela NIHSS",
+        "note": "Uma NIHSS 0 não exclui AVC: déficits de circulação posterior (marcha, vertigem, disfagia) pontuam pouco.",
+        "raw": {
+          "score": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Paralisia facial menor + disartria leve: 2 pontos (leve)",
+      "input": {
+        "n4": "1",
+        "n10": "1",
+        "n1a": "0",
+        "n1b": "0",
+        "n1c": "0",
+        "n2": "0",
+        "n3": "0",
+        "n5a": "0",
+        "n5b": "0",
+        "n6a": "0",
+        "n6b": "0",
+        "n7": "0",
+        "n8": "0",
+        "n9": "0",
+        "n11": "0"
+      },
+      "publicOutput": {
+        "id": "nihss",
+        "main": [
+          "2",
+          "de 42"
+        ],
+        "label": "NIHSS",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "mid",
+        "verdict": "leve"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "de 42"
+        ],
+        "label": "NIHSS",
+        "level": "mid",
+        "verdict": "AVC leve (1 a 4 pontos)",
+        "note": "Avalie se o déficit é incapacitante: um NIHSS baixo com afasia ou hemianopsia pode justificar reperfusão.",
+        "raw": {
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Sonolento, hemianopsia completa, face parcial, braço 3, perna 2, afasia e disartria leves: 12 (moderado)",
+      "input": {
+        "n1a": "1",
+        "n3": "2",
+        "n4": "2",
+        "n5a": "3",
+        "n6a": "2",
+        "n9": "1",
+        "n10": "1",
+        "n1b": "0",
+        "n1c": "0",
+        "n2": "0",
+        "n5b": "0",
+        "n6b": "0",
+        "n7": "0",
+        "n8": "0",
+        "n11": "0"
+      },
+      "publicOutput": {
+        "id": "nihss",
+        "main": [
+          "12",
+          "de 42"
+        ],
+        "label": "NIHSS",
+        "raw": {
+          "score": 12
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 12,
+        "level": "mid",
+        "verdict": "moderado (5 a 15"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "12",
+          "de 42"
+        ],
+        "label": "NIHSS",
+        "level": "mid",
+        "verdict": "AVC moderado (5 a 15 pontos)",
+        "note": "Investigue oclusão de grande vaso (angiotomografia) se estiver na janela de trombectomia.",
+        "raw": {
+          "score": 12
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Limite: 16 pontos (moderado a grave)",
+      "input": {
+        "n2": "2",
+        "n3": "2",
+        "n4": "2",
+        "n5b": "4",
+        "n6b": "4",
+        "n9": "2",
+        "n1a": "0",
+        "n1b": "0",
+        "n1c": "0",
+        "n5a": "0",
+        "n6a": "0",
+        "n7": "0",
+        "n8": "0",
+        "n10": "0",
+        "n11": "0"
+      },
+      "publicOutput": {
+        "id": "nihss",
+        "main": [
+          "16",
+          "de 42"
+        ],
+        "label": "NIHSS",
+        "raw": {
+          "score": 16
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 16,
+        "level": "high",
+        "verdict": "moderado a grave"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "16",
+          "de 42"
+        ],
+        "label": "NIHSS",
+        "level": "high",
+        "verdict": "AVC moderado a grave (16 a 20 pontos)",
+        "note": "Alta probabilidade de oclusão de grande vaso; maior risco de transformação hemorrágica.",
+        "raw": {
+          "score": 16
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "Síndrome hemisférica esquerda completa: 28 (grave)",
+      "input": {
+        "n1a": "2",
+        "n1b": "2",
+        "n1c": "2",
+        "n2": "2",
+        "n3": "2",
+        "n4": "3",
+        "n5b": "4",
+        "n6b": "4",
+        "n8": "2",
+        "n9": "3",
+        "n11": "2",
+        "n5a": "0",
+        "n6a": "0",
+        "n7": "0",
+        "n10": "0"
+      },
+      "publicOutput": {
+        "id": "nihss",
+        "main": [
+          "28",
+          "de 42"
+        ],
+        "label": "NIHSS",
+        "raw": {
+          "score": 28
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 28,
+        "level": "high",
+        "verdict": "grave (21"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "28",
+          "de 42"
+        ],
+        "label": "NIHSS",
+        "level": "high",
+        "verdict": "AVC grave (21 a 42 pontos)",
+        "note": "Déficit extenso: prognóstico reservado sem reperfusão.",
+        "raw": {
+          "score": 28
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

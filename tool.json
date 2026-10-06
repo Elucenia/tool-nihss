@@ -552,7 +552,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "NIHSS: 15 itens, total numérico 0–42; UN nos itens permitidos pelo formulário completo e CDE NINDS; avaliação com UN fica incompleta aqui, sem soma nem conversão para 0",
-    "implementationVersion": "nihss@native-2026-10-04+ab5c3638beda",
+    "implementationVersion": "nihss@native-2026-10-05+667340c6ec0b",
     "currentMethodSource": "https://cde.nlm.nih.gov/deView?tinyId=2MpS5ASNS24",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -1050,7 +1050,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "ab5c3638bedabb2925df3044dc0c434a9406d4ab66eec77628ad2f4a41bccbde",
+      "implementationHash": "667340c6ec0b68bf834517afee513febac18862ba9de091fd5fa6758755a294e",
       "previousInputContract": {
         "fields": [
           {
@@ -1442,6 +1442,34 @@
           "file": "nihss-un-semantic-independent-review-final26-r6.json",
           "sha256": "812ee4c37f862d07a024df637c846c96416d3bb258bb284910941485e305458b"
         }
+      ],
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "nihss@native-2026-10-04+ab5c3638beda",
+          "previousImplementationHash": "ab5c3638bedabb2925df3044dc0c434a9406d4ab66eec77628ad2f4a41bccbde",
+          "implementationHash": "667340c6ec0b68bf834517afee513febac18862ba9de091fd5fa6758755a294e",
+          "scientificBodySha256": "63c0d6a7995446753fccfc8bc13ccb18c6d79b9b934be2bd3f87ce752dac6727",
+          "metadataContractHash": "1bf7cceb2af537505968de9adf11da6e79e5ae239418a68e77400a9e911b822e",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
       ]
     },
     "limits": "Avaliação estruturada do comprometimento neurológico em AVC. A edição e as instruções de cada item devem ser conferidas no formulário correspondente. A adaptação brasileira publicada e a concordância entre examinadores não equivalem a validação clínica desta implementação nem de suas novas traduções. UN é uma categoria não numérica nas situações específicas dos itens motores, de ataxia e de disartria do formulário completo. A interface permite selecioná-la e sinaliza avaliação incompleta, sem pontuação total e sem converter UN em 0. Registre o motivo no formulário clínico correspondente. Essa proteção não valida a administração completa, as dependências entre itens, os materiais de linguagem nem as traduções autorais.",
@@ -1553,20 +1581,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/nihss/calculator.js",
-    "bytes": 9611,
-    "sha256": "ab5c3638bedabb2925df3044dc0c434a9406d4ab66eec77628ad2f4a41bccbde"
+    "bytes": 9816,
+    "sha256": "667340c6ec0b68bf834517afee513febac18862ba9de091fd5fa6758755a294e"
   },
-  "sourceToolSha256": "5c1e40f81cf0dd52b2b6c6609b4c4985554a7422bb2044c3a913bf69ecfa54c4",
+  "sourceToolSha256": "cb0220dd55f15d8595cd2d405ffa156a905d32d1656be3a83627e980fb31e869",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "96f7626fc9031d196f1688d79db5f00bba83e4de73dae113102832810f0283cf",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "96f7626fc9031d196f1688d79db5f00bba83e4de73dae113102832810f0283cf",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

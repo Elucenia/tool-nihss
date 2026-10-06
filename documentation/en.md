@@ -205,3 +205,42 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+No measurable deficit on the NIHSS
+
+A NIHSS of 0 does not exclude stroke: posterior circulation deficits (gait, vertigo, dysphagia) score low.
+
+
+### 2
+
+Mild stroke (1 to 4 points)
+
+Assess whether the deficit is disabling: a low NIHSS with aphasia or hemianopsia may justify reperfusion.
+
+
+### 3
+
+Moderate stroke (5 to 15 points)
+
+Investigate large vessel occlusion (angiotomography) if within the thrombectomy window.
+
+
+### 4
+
+Moderate to severe stroke (16 to 20 points)
+
+High probability of large vessel occlusion; higher risk of hemorrhagic transformation.
+
+
+### 5
+
+Severe stroke (21 to 42 points)
+
+Extensive deficit: guarded prognosis without reperfusion.
+

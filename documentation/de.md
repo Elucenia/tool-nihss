@@ -205,3 +205,42 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Kein messbares Defizit nach der NIHSS
+
+Eine NIHSS von 0 schließt einen Schlaganfall nicht aus: Defizite der hinteren Zirkulation (Gangstörung, Vertigo, Dysphagie) werden niedrig bewertet.
+
+
+### 2
+
+Leichter Schlaganfall (1 bis 4 Punkte)
+
+Beurteilen Sie, ob das Defizit behindernd ist: Ein niedriger NIHSS-Wert mit Aphasie oder Hemianopsie kann eine Reperfusion rechtfertigen.
+
+
+### 3
+
+Mäßiger Schlaganfall (5 bis 15 Punkte)
+
+Eine große Gefäßokklusion (Angiotomographie) untersuchen, wenn Sie sich im Thrombektomie-Zeitfenster befinden.
+
+
+### 4
+
+Mäßiger bis schwerer Schlaganfall (16 bis 20 Punkte)
+
+Hohe Wahrscheinlichkeit eines großen Gefäßverschlusses; höheres Risiko einer hämorrhagischen Transformation.
+
+
+### 5
+
+Schwerer Schlaganfall (21 bis 42 Punkte)
+
+Ausgedehntes Defizit: zurückhaltende Prognose ohne Reperfusion.
+

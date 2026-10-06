@@ -205,3 +205,42 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Nessun deficit misurabile alla NIHSS
+
+Una NIHSS di 0 non esclude un ictus: i deficit della circolazione posteriore (andatura, vertigine, disfagia) ottengono pochi punti.
+
+
+### 2
+
+Ictus lieve (1 a 4 punti)
+
+Valutare se il deficit è disabilitante: una NIHSS bassa con afasia o emianopsia può giustificare la riperfusione.
+
+
+### 3
+
+Ictus moderato (5 a 15 punti)
+
+Indagare un’occlusione di grosso vaso (angiotomografia) se si è nella finestra per la trombectomia.
+
+
+### 4
+
+Ictus moderato-grave (16 a 20 punti)
+
+Alta probabilità di occlusione di grosso vaso; maggiore rischio di trasformazione emorragica.
+
+
+### 5
+
+Ictus grave (21 a 42 punti)
+
+Deficit esteso: prognosi riservata senza riperfusione.
+

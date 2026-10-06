@@ -205,3 +205,42 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Aucun déficit mesurable à la NIHSS
+
+Un score NIHSS de 0 n’exclut pas un AVC : les déficits de la circulation postérieure (marche, vertige, dysphagie) obtiennent peu de points.
+
+
+### 2
+
+AVC léger (1 à 4 points)
+
+Évaluez si le déficit est invalidant : un NIHSS faible avec aphasie ou hémianopsie peut justifier une reperfusion.
+
+
+### 3
+
+AVC modéré (5 à 15 points)
+
+Rechercher une occlusion de gros vaisseau (angiotomographie) si vous êtes dans la fenêtre de thrombectomie.
+
+
+### 4
+
+AVC modéré à sévère (16 à 20 points)
+
+Forte probabilité d’occlusion de gros vaisseau ; risque accru de transformation hémorragique.
+
+
+### 5
+
+AVC grave (21 à 42 points)
+
+Déficit étendu : pronostic réservé sans reperfusion.
+
